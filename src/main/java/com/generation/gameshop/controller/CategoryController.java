@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -30,6 +31,21 @@ public class CategoryController {
     @GetMapping("/all")
     public ResponseEntity<List<Category>> getAll(){
         return ResponseEntity.ok(categoryRepository.findAll());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Category> getOneById(@PathVariable("id") Long id) {
+//        Category category = categoryRepository.findById(id).orElse(null);
+//
+//        if (category == null)
+//            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Categoria não encontrada");
+//
+//        return ResponseEntity.ok(category);
+
+
+        return categoryRepository.findById(id)
+                .map((response)->ResponseEntity.ok(response))
+                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Categoria não encontrada."));
     }
 
     @GetMapping
