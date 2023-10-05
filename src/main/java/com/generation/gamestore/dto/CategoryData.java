@@ -1,6 +1,6 @@
-package com.generation.gameshop.dto;
+package com.generation.gamestore.dto;
 
-import com.generation.gameshop.model.Category;
+import com.generation.gamestore.model.Category;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

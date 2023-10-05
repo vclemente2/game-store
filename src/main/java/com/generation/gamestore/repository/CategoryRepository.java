@@ -1,6 +1,6 @@
-package com.generation.gameshop.repository;
+package com.generation.gamestore.repository;
 
-import com.generation.gameshop.model.Category;
+import com.generation.gamestore.model.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 

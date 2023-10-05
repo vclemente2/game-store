@@ -1,13 +1,13 @@
-package com.generation.gameshop;
+package com.generation.gamestore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GameShopApplication {
+public class GameStoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GameShopApplication.class, args);
+		SpringApplication.run(GameStoreApplication.class, args);
 	}
 
 }

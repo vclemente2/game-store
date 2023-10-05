@@ -1,6 +1,6 @@
-package com.generation.gameshop.model;
+package com.generation.gamestore.model;
 
-import com.generation.gameshop.dto.CategoryData;
+import com.generation.gamestore.dto.CategoryData;
 import jakarta.persistence.*;
 
 @Entity

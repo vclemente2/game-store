@@ -1,8 +1,8 @@
-package com.generation.gameshop.controller;
+package com.generation.gamestore.controller;
 
-import com.generation.gameshop.dto.CategoryData;
-import com.generation.gameshop.model.Category;
-import com.generation.gameshop.repository.CategoryRepository;
+import com.generation.gamestore.dto.CategoryData;
+import com.generation.gamestore.model.Category;
+import com.generation.gamestore.repository.CategoryRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
