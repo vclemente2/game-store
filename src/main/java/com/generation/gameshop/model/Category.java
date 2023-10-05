@@ -2,11 +2,7 @@ package com.generation.gameshop.model;
 
 import com.generation.gameshop.dto.CategoryData;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
 @Entity
 @Table(name = "tb_categories")
 public class Category {
@@ -17,5 +13,23 @@ public class Category {
 
     public Category(CategoryData data){
         this.name = data.name();
+    }
+
+    public Category(){}
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
